@@ -2,15 +2,15 @@ from django.db import models
 
 
 class Categoria(models.Model):
-    nombre = models.CharField(max_length=100, unique=True) # "Hogar y Jaridin"
-    slug = models.SlugField(max_length=100, unique=True) # "hogar-y-jardin"
+    nombre = models.CharField(max_length=100, unique=True)
+    slug = models.SlugField(max_length=100, unique=True)
 
     class Meta:
         verbose_name = "Categoria"
         verbose_name_plural = "Categorias"
         ordering = ['nombre']
 
-    def __str__(self):
+    def _str_(self):
         return self.nombre
 class Producto(models.Model):
     categoria = models.ForeignKey(
@@ -18,7 +18,7 @@ class Producto(models.Model):
         on_delete=models.CASCADE,
         related_name='productos',
         null = True,
-        blank = True 
+        blank = True
     )
     nombre = models.CharField(max_length=100)
     descripcion = models.TextField()
@@ -34,5 +34,5 @@ class Producto(models.Model):
         verbose_name_plural = "Productos"
         ordering = ['nombre']
 
-    def __str__(self):
+    def _str_(self):
         return f'{self.nombre} - {self.marca} - ${self.precio} - Stock: {self.stock}'

@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['template'],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -98,9 +98,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-MEDIA_URL = "/productos/"
-MEDIA_ROOT = BASE_DIR / "productos"
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
