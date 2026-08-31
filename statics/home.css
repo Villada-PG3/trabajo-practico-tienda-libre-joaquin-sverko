@@ -1,1 +1,55 @@
-    color: red ;
+
+.container {
+    max-width: 1200px;
+}
+
+h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.card-img-top {
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 14px;
+}
+.fw-bold {
+    font-size: 20px;
+}
+
+.badge {
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.alert {
+    border-radius: 10px;
+}
