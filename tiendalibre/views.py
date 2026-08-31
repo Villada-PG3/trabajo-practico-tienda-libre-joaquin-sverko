@@ -70,7 +70,7 @@ def home(request):
 
                 'titulo': 'TIENDA LIBRE',
                 'productos': lista_productos,
-                'usuario_logueado': True,
+                'usuario_logueado': True,  
             }
 
     return render(request, 'tiendalibre/home.html', context)

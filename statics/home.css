@@ -1,55 +1,86 @@
 
-.container {
-    max-width: 1200px;
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2) ;
+    min-height: 100vh;
 }
 
 h1 {
-    font-weight: bold;
-    margin-bottom: 15px;
+    text-align: center;
+    color: white ;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+h1 + p {
+    text-align: center;
+    color: white;
+    font-size: 18px;
 }
 
 h2 {
-    font-weight: bold;
+    text-align: center;
+    color: white ;
+    font-size: 32px;
+    margin-bottom: 30px ;
 }
 
 .card {
-    border: none;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background: #001746;
+    color: white ;
+    border: 3px solid #00ffcc ;
+    border-radius: 25px ;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5) ;
+    transition: all 0.3s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-}
-
-.card-img-top {
-    padding: 15px;
-    background-color: #f8f9fa;
-}
-
-.card-body {
-    padding: 20px;
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 0 35px rgba(0, 255, 204, 0.9);
 }
 
 .card-title {
-    font-weight: bold;
+    color: #00ffcc ;
+    font-size: 23px;
+    text-transform: uppercase;
 }
 
 .card-subtitle {
-    font-size: 14px;
+    color: #ffcc00 ;
 }
+
+
+.card-text {
+    color: #dddddd ;
+}
+
 .fw-bold {
-    font-size: 20px;
+    color: #ff4d6d ;
+    font-size: 25px ;
 }
 
-.badge {
-    margin-right: 5px;
-    margin-top: 5px;
+
+.badge.bg-secondary {
+    background-color: #fbfbfb;
+    font-size: 13px;
+}
+.badge.bg-success {
+    background-color: #007bff ;
 }
 
-.alert {
-    border-radius: 10px;
+.badge.bg-danger {
+    background-color: #ff1744;
+}
+.alert-success {
+    background-color: #00f038 ;
+    color: #111827 ;
+    border: none ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px ;
+}
+.container {
+    padding-bottom: 50px;
 }
