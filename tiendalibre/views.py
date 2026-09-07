@@ -3,9 +3,9 @@ from .models import Producto
 
 
 
-def productos(request):
-    lista_productos = Producto.objects.filter(activo=True)
-    return render(request, 'tiendalibre/productos.html', {'productos': lista_productos})
+def catalogo(request):
+    lista_productos = Producto.objects.filter(activo=True).order_by('-stock') and Producto.objects.filter(activo=True).order_by('-precio') 
+    return render(request, 'tiendalibre/catalogo.html', {'productos': lista_productos})
 
 def home(request):
 
